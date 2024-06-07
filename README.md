@@ -52,6 +52,7 @@ The main goal of CodeSphere is to advance E-Learning by addressing two significa
 ### Screenshots
 
 <p align="center">
+  <p>Landing Page</p>
   <img src="Demo/Screenshot (782).png" alt="image"/>
 </p>
 
