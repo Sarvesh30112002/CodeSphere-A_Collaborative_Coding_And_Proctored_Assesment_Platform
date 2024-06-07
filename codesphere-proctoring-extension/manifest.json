@@ -1,0 +1,27 @@
+{
+    "name":"CodeSphere_Proctoring",
+    "description":"The Chrome extension is a powerful tool that prevents cheating during online assessments. With audio and video checks and image proctoring, it ensures the integrity of online tests and provides a seamless user experience.",
+    "version":"0.0.1",
+    "manifest_version":3,
+    "icons": {
+        "128" : "/icons/icon3.png",
+        "48" : "/icons/icon2.png",
+        "16" : "/icons/icon1.png"
+    },
+    "action":{
+        "default_popup":"popup.html"
+    },
+    "content_scripts": [
+        {
+          "matches": ["http://localhost:3001/room/join/*",
+          "http://localhost:3001/room/joined/*"],
+          "js": ["capture.js"]
+        }
+    ],
+    "permissions": [
+        "storage"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    }
+}

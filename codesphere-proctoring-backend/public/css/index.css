@@ -1,0 +1,239 @@
+/* --------------------------------- basic styling --------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #1c1c1c; /* change background color to dark gray */
+    color: #f8f8f8; /* change text color to white */
+}
+
+/* ------------------------------ Interval part code ----------------------------- */
+
+.header,
+.set_interval {
+    text-align: center;
+    margin-top: 1em;
+    border: none;
+}
+
+button {
+    background-color: #5c5d5e;
+    outline: none;
+    border: none;
+    padding: 0.5em 1em;
+    color: #f8f8f8;
+    border-radius: 0.25em;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input {
+    padding: 0.4em 1em;
+    width: 60px;
+    color: #1c1c1c; /* change input text color to dark gray */
+    background-color: #f8f8f8; /* change input background color to light gray */
+}
+
+.span_int {
+    display: block;
+    margin-top: 0.5em;
+    opacity: 0.4;
+    transition-duration: 0.3s;
+    color: #f8f8f8; /* change text color to white */
+}
+
+/* ------------------------------ User part code ----------------------------- */
+
+.user {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    margin-inline: auto;
+    margin-top: 2em;
+}
+
+/* ------------------------------- Image part code ------------------------------- */
+
+.wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin-top: 1em;
+    color: #f8f8f8;
+    gap: 2em;
+    padding: 1em 2em;
+    padding-block: 3em;
+    -webkit-overflow-scrolling: touch;
+    background-color: #292b3e;
+}
+
+.wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.warn {
+    margin-inline: auto;
+    color: rgba(171, 139, 121, 0.6);
+    opacity: 0.2;
+}
+
+img {
+    width: 256px;
+    height: 256px;
+    border-radius: 1em;
+}
+
+.span {
+    display: block;
+    margin-top: 1em;
+    color: #f8f8f8; /* change text color to white */
+}
+
+.card {
+    text-align: center;
+    height: 300px;
+    width: 256px;
+    cursor: -webkit-grab;
+    background-color: #3d3f51;
+    border-radius: 1em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card img {
+    margin-bottom: 1em;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 1em auto;
+    font-size: 1.1em;
+    width: 80%;
+    color: #f8f8f8; /* change text color to white */
+    background-color: #1c1c1c; /* change background color to dark blue */
+}
+
+th,
+td {
+    padding: 0.5em;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #ddd;
+    color: #fff;
+}
+
+/* Add alternating row background color */
+
+/* Highlight rows on hover */
+tr:hover {
+    background-color: #005CC8;
+    cursor: pointer;
+}
+
+/* Style the table caption */
+caption {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+/* Add a border to the first and last rows */
+tr:first-child td {
+    border-top: 1px solid #ddd;
+}
+
+tr:last-child td {
+    border-bottom: 1px solid #ddd;
+}
+
+/* Style the column headers */
+th {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+}
+
+/* Center the text in the last column */
+td:last-child {
+    text-align: center;
+}
+
+/* Add a border around the table */
+table {
+    border: 1px solid #1c1c1c;
+}
+
+/* Add a padding to the table cells */
+td,
+th {
+    padding: 0.5em;
+}
+
+/* Set the minimum width for the table cells */
+td,
+th {
+    min-width: 100px;
+}
+
+/* Dark mode */
+body.dark-mode {
+    background: #2b2c3c;
+    color: #f8f8f8;
+}
+
+.header,
+.set_interval,
+.card {
+    border: none;
+}
+
+.button {
+    background-color: #5c5d5e;
+    color: #f8f8f8;
+}
+
+.button:hover {
+    background-color: #3d3f51;
+}
+
+.input {
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.table {
+    background-color: #292b3e;
+    color: #f8f8f8;
+}
+
+.table th {
+    background-color: #2b2c3c;
+    color: #f8f8f8;
+}
+
+.table tr:nth-child(even) {
+    background-color: #3d3f51;
+}
+
+.table tr:hover {
+    background-color: #2b2c3c;
+}
+
+.table td:last-child {
+    color: #f8f8f8;
+}
+
+input[name="interval"] {
+  width: 400px;
+}

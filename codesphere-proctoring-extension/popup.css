@@ -1,0 +1,122 @@
+/* Popup form container */
+.form {
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 20px;
+    min-width: 300px;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+/* Form grid */
+.row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Form input styles */
+.col {
+    position: relative;
+    padding: 0 0 20px 0;
+    text-align: left;
+    margin: auto;
+}
+
+.form-control {
+    width: 100%;
+    border: none;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #555;
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.form-control:focus {
+    outline: none;
+    border: 2px solid #4caf50;
+}
+
+label {
+    display: block;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-control:not(:placeholder-shown) + label,
+.form-control:focus + label {
+    transform: translateY(-20px);
+    font-size: 12px;
+    font-weight: 600;
+    color: #4caf50;
+}
+
+/* Submit button styles */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 25px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #3e8e41;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+/* Success message styles */
+.success {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    background-color: #4caf50;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.success.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Media queries for responsive design */
+@media only screen and (max-width: 768px) {
+    .row {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .row {
+        grid-template-columns: 1fr;
+    }
+}

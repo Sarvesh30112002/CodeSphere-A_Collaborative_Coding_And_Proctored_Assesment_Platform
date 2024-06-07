@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proctoring system</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+        <div class="form" >
+            <form method="post" id="form">
+                <div class="row" >
+                    <div class="col">
+                        <label for="f_name">First name:</label>
+                        <input class="form-control" type="text" id="f_name" name="f_name">
+                    </div>
+                    <div class="col">
+                        <label for="l_name">Last name:</label>
+                        <input class="form-control" type="text" id="l_name" name="l_name">
+                    </div>
+                    <div class="col">
+                        <label for="email"> Email:</label>
+                        <input class="form-control" type="email" id="email" name="email">
+                    </div>
+                    
+                    <div class="col">
+                        <label for="invitation"> Test invitation code:</label>
+                        <input class="form-control" type="text" id="test_invitation" name="test_invitation">
+                    
+                    </div>
+                </div>
+                <button class="btn" type="submit">Start Test</button>
+                
+            </form>
+        </div>
+        <script src="popup.js"></script>
+</body>
+</html>

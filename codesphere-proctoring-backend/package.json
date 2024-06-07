@@ -1,0 +1,22 @@
+{
+  "name": "codesphere-proctoring-backend",
+  "version": "1.0.0",
+  "description": "A backend for CodeSphere-Proctoring-extension",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sarvesh-hadole",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.3.4",
+    "body-parser": "^1.20.2",
+    "cloudinary": "^1.41.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^7.6.9",
+    "muter": "^0.7.0",
+    "uniqid": "^5.4.0"
+  }
+}

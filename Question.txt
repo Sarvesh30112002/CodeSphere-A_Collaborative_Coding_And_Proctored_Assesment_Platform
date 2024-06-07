@@ -1,0 +1,13 @@
+Write a program to compute the finish time, turnaround time and waiting time for the First come First serve algorithms
+
+Write a program to check whether given system is in safe state or not using Banker’s Deadlock Avoidance algorithm.
+
+Write a program to calculate the number of page faults for a reference string for the FIFO page replacement algorithm
+
+Write a program to write and read two messages through the pipe using the parent and the child processes 
+
+Write a program to Implement multithreading for Matrix Operations using Pthreads.
+
+Write a program to show the Implementation of Classical problem  Reader-writer using Threads and Semaphore 
+
+Write a program to show the Implementation of FCFS Disk Scheduling algorithms
