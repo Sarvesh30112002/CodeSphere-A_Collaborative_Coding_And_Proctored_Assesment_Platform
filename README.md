@@ -1,2 +1,30 @@
 # CodeSphere-A_Collaborative_Coding_And_Proctored_Assesment_Platform
-CodeSphere is the ultimate solution for modern education and Proctored assessment integrity. With CodeSphere, educators and students can collaborate in real-time coding environments, allowing for interactive programming practice and live supervision.
+CodeSphere is a comprehensive platform designed to enhance E-Learning by providing a real-time interactive web-based lab environment for students and teachers. It integrates advanced proctoring features to ensure the integrity of online assessments, making it a perfect solution for remote learning and secure online examinations.
+
+<hr>
+
+## Introduction
+
+The main goal of CodeSphere is to advance E-Learning by addressing two significant challenges:
+1. Providing practical knowledge through a real-time interactive web-based lab.
+2. Ensuring the integrity of online assessments with robust proctoring mechanisms.
+
+## Features
+
+### CodeSphere Lab
+- **Create Room**: The admin (teacher) can create a room with a secret link and password.
+- **Join Room**: Participants can join the room using the link and password to complete programming tasks.
+- **Code Editor**: Supports C, C++, Java, and Python, with enter, exit, run, and submit functionalities.
+- **Real-time Live Coding**: Admin can manage the room, guide, and verify each student's code in real-time.
+- **Code Checking**: Admin can download the submitted code as a PDF for review.
+
+### Proctoring
+- **Form Input**: Allows users to input their details and test invitation code.
+- **Multiple Tab Detection**: Detects and alerts if multiple tabs are open.
+- **Form Auto-fill**: Automatically fills in user details for subsequent tests using local storage.
+- **Audio and Video Checks**: Ensures the candidate’s audio and video setup meets the requirements.
+- **Live Webcam Feed**: Displays the candidate's live webcam feed on the page.
+- **Image Capture and Upload**: Captures images at configurable intervals and uploads them to the server.
+- **Admin Dashboard**: Displays all user information, allows setting the interval for image capture, and shows images with timestamps.
+
+
