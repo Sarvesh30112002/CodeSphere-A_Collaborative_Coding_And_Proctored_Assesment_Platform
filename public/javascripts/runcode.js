@@ -11,8 +11,8 @@ document.getElementById('runcode').addEventListener('click', () => {
         headers: {
           'content-type': 'application/json',
           'x-rapidapi-key':
-            '88850d69a3mshc2148a5eb1e73b7p14fe3djsn6a10e82d8891',
-          'x-rapidapi-host': 'judge0-ce.p.rapidapi.com',
+            '',
+          'x-rapidapi-host': '',
           accept: 'application/json',
         },
         body: JSON.stringify({
@@ -41,8 +41,8 @@ document.getElementById('runcode').addEventListener('click', () => {
           method: 'GET',
           headers: {
             'x-rapidapi-key':
-              '88850d69a3mshc2148a5eb1e73b7p14fe3djsn6a10e82d8891',
-            'x-rapidapi-host': 'judge0-ce.p.rapidapi.com',
+              '',
+            'x-rapidapi-host': '',
           },
         });
         jsonGetSolution = await getSolution.json();
