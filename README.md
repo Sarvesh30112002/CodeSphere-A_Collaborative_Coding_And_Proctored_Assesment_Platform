@@ -5,7 +5,7 @@ CodeSphere is a comprehensive platform designed to enhance E-Learning by providi
 
 ## Introduction
 
-The main goal of CodeSphere is to advance E-Learning by addressing two significant challenges:
+The main goal of CodeSphere is to advance E-Learning by addressing two significant challenges: 
 1. Providing practical knowledge through a real-time interactive web-based lab.
 2. Ensuring the integrity of online assessments with robust proctoring mechanisms.
 
