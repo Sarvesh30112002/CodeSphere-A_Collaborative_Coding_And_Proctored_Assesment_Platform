@@ -28,7 +28,75 @@ The main goal of CodeSphere is to advance E-Learning by addressing two significa
 - **Admin Dashboard**: Displays all user information, allows setting the interval for image capture, and shows images with timestamps.
 
 <hr>
+
+## Tech Stack used : 
+
+**Client:** Ejs, Bootstrap, CSS, JS
+
+**Server:** NodeJs, MongoDB, Socket.io, Express.js
+
+**Others:** PostMan API, JWT Authentication, Cloudinary 
+<hr>
+
+## Architecture of Extension
+![My image](https://res.cloudinary.com/dt9ckenyh/image/upload/v1678415195/my-images/Proctor_Vision_qkmqap.png)
+<hr>
+
 ## Flow Diagram
 <p align="center">
   <img src="Demo/Screenshot 2024-06-07 143137.png" alt="image"/>
 </p>
+
+<hr>
+
+### Screenshots
+
+<p align="center">
+  <img src="Demo/Screenshot (782).png" alt="image"/>
+</p>
+
+<p align="center">
+  <img src="Demo/Screenshot (783).png" alt="image"/>
+</p>
+
+<p align="center">
+  <img src="Demo/Screenshot (784).png" alt="image"/>
+</p>
+
+<p align="center">
+  <img src="Demo/Screenshot (785).png" alt="image"/>
+</p>
+
+<p align="center">
+  <img src="Demo/Screenshot (786).png" alt="image"/>
+</p>
+
+<p align="center">
+  <img src="Demo/Screenshot (787).png" alt="image"/>
+</p>
+
+<p align="center">
+  <img src="Demo/Screenshot (788).png" alt="image"/>
+</p>
+
+<p align="center">
+  <img src="Demo/Screenshot (789).png" alt="image"/>
+</p>
+
+<p align="center">
+  <img src="Demo/Screenshot (790).png" alt="image"/>
+</p>
+
+<p align="center">
+  <img src="Demo/Screenshot (791).png" alt="image"/>
+</p>
+
+<p align="center">
+  <img src="Demo/Screenshot (792).png" alt="image"/>
+</p>
+
+<p align="center">
+  <img src="Demo/Screenshot 2024-06-07 093233.png" alt="image"/>
+</p>
+
+<hr>
