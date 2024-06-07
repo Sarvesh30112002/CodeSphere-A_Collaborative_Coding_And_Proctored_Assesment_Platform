@@ -27,4 +27,8 @@ The main goal of CodeSphere is to advance E-Learning by addressing two significa
 - **Image Capture and Upload**: Captures images at configurable intervals and uploads them to the server.
 - **Admin Dashboard**: Displays all user information, allows setting the interval for image capture, and shows images with timestamps.
 
-
+<hr>
+## Flow Diagram
+<p align="center">
+  <img src="Demo/Screenshot 2024-06-07 143137.png" alt="image"/>
+</p>
