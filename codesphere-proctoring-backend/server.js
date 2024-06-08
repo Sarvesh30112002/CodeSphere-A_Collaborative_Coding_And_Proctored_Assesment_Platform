@@ -53,27 +53,6 @@ app.post("/createUser", async (req, res) => {
     }
 });
 
-/*  route for uploading user images to cloudinary and then storing url to mongoDB */
-app.post("/upload-image", async (req, res) => {
-    const imageData = req.body.image;
-    const userid = req.body.userid;
-
-    try {
-        // Generate timestamp for the filename
-        const timestamp = new Date().getTime();
-        
-        // Construct the filename with the timestamp
-        const fileName = `image-${timestamp}`;
-
-        console.log(fileName);
-        
-        // Upload image to Cloudinary
-        const result = await cloudinary.uploader.upload(imageData, {
-            overwrite: true,
-            invalidate: true,
-            folder: "proctor-vision/" + userid,
-            public_id: fileName,
-        });
 
         // Update user document with the new image URL
         const user = await UserDataSchema.findOneAndUpdate(
