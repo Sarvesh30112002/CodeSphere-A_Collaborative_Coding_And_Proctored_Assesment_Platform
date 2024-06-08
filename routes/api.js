@@ -71,8 +71,6 @@ router.post('/create', (req, res) => {
     }
     const roomData = {
       labname: req.body.labname,
-      password: hash,
-      createdBy: req.body.by,
       adminCode: admincode,
       languageId: req.body.language,
       testTimeLimit: req.body.testTimeLimit, // Added test time limit
@@ -128,11 +126,6 @@ router.get('/questions', (req, res) => {
 // Submit code by a user
 router.post('/submitcode', (req, res) => {
   const { username, id, code } = req.body;
-  const data = new userModal({
-    username: username,
-    roomId: id,
-    code: code,
-  });
   data.save()
     .then((doc) => {
       return res.status(200).send('Code submitted');
