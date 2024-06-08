@@ -42,8 +42,6 @@ router.get('/joined/:roomId', queryCheck, verifyroom, (req, res) => {
               // Render the room.ejs page with test time limit
               res.render('room', {
                   title: 'Room',
-                  username: req.user.username,
-                  page: 'student',
                   menuId: 'home',
                   labname: room.labname,
                   by: room.createdBy,
@@ -59,8 +57,5 @@ router.get('/joined/:roomId', queryCheck, verifyroom, (req, res) => {
 });
 
 
-router.get('/join/:roomId', verifyroom, (req, res) => {
-  res.render('joinroom', { page: 'Join', menuId: 'home' });
-});
 
 module.exports = router;
