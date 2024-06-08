@@ -14,8 +14,6 @@ function copy() {
 document.getElementById('createform').addEventListener('submit', (e) => {
   e.preventDefault();
   const labname = document.getElementById('labname').value;
-  const by = document.getElementById('createdby').value;
-  const password = document.getElementById('password').value;
   const language = document.getElementById('language').value;
   const testTimeLimit = document.getElementById('testTimeLimit').value;
   const questionStatements = document.getElementById('questionStatements').value.split('\n').filter(statement => statement.trim() !== '');
@@ -24,8 +22,6 @@ document.getElementById('createform').addEventListener('submit', (e) => {
     .post('/api/v1/create', {
       password,
       by,
-      labname,
-      language,
       testTimeLimit, 
       questionStatements
     })
