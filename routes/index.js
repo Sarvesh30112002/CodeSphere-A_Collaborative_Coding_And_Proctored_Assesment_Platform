@@ -10,18 +10,12 @@ router.get('/', function (req, res, next) {
   res.render('index', { title: 'Express', page: 'Home', menuId: 'home' });
 });
 
-router.get('/create', (req, res) => {
-  res.render('create', { page: 'Create', menuId: 'home' });
-});
-
 router.get('/admin/:roomId/:admincode', (req, res) => {
   roomModal.findById(req.params.roomId, (err, room) => {
     if (req.params.admincode === room.adminCode)
       return res.render('adminpanal', {
         page: 'admin',
         menuId: 'home',
-        labname: room.labname,
-        createdby: room.createdBy,
         language: room.languageId,
         testTime: room.testTime, // Include test time in the render
       });
